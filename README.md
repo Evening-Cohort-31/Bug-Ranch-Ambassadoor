@@ -76,11 +76,17 @@ Your journey will take you through the wildness of the American Midwest and acro
 ```
 
 1. In the **main** module, one of the first lines of code is `const drovers = hireDrovers(cattleToDrive)`. Explain what the value of the `drovers` variable is when that line of code runs.
-   > Your answer here
+   > Drovers is an array of drover objects, the drover objects contain information about the drovers. The amount of drover objects is determined by the amount of cattle needed to drive and are selected by random using a rng function. 
+
 2. At the bottom of the main module, you will see the following code - `for (const drover of drovers)`. Explain what the values of both the `drover` and the `drovers` variables are.
-   > Your answer here
+   > Drover is the current drover object being looked at by the for loop, drovers is the array of drover objects. 
+
 3. In the **journey** module, there is a `journeyMaker()` function. In that function, there is a variable named `areas` which will have the value of an object. Use your debugger to show what the value of each key is on that object. Use [Loom](https://www.loom.com) to record your session.
    > Your public Loom URL here
+
+
+
+
 4. Also in the **journey** module, there is the following code:
    ```js
    for (let forestNumber = 0; forestNumber < areas.forests; forestNumber++) {
@@ -89,10 +95,16 @@ Your journey will take you through the wildness of the American Midwest and acro
    ```
    Explain this code with your best vocabulary.
    > Your answer here
+   For every cycle of this loop a string value of "forest" is pushed to the journey array. The length of the loop is determined by the number assigned to the forests property of the areas object. A variable of forestNumber is declared and assigned a value of 0 (let forestNumber = 0), the loop checks the conditional requirement that the current value of forestNumber be less than the total number of forests (forestNumber < areas.forests). At the end of each loop the forestNumber counter is increased by 1 (forestNumber++). So once enough loops have passed that forestNumber is equal to areas.forest the loop is closed.  
+
+
 5. Explain the value of the `database` variable in the **database** module. Be as comprehensive as possible.
-   > Your answer here
+   > The database variable is an object that contains two properties; cattleTypes and drovers. The value of each of these properties is an array of objects. In the cattleTypes array each object represents a type of cattle with properties id & breed. In the drovers array each object represents a drover with properties of id, first_name, last_name, and gender. 
+
+
+
 6. In the **drovers** module, there is a `hireDrovers()` function. You will notice the following code on that line - `(herdSize)`. What is that defining, and where does it get its value?
-   > Your answer here
+   > herdsize is defining whatever value is passed into the hireDrovers function. The function is intended to receive a integer value (say 50). 
 
 ## When You Are Done
 
