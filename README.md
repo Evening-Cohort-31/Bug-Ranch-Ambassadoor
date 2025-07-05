@@ -82,7 +82,7 @@ Your journey will take you through the wildness of the American Midwest and acro
    > Drover is the current drover object being looked at by the for loop, drovers is the array of drover objects. 
 
 3. In the **journey** module, there is a `journeyMaker()` function. In that function, there is a variable named `areas` which will have the value of an object. Use your debugger to show what the value of each key is on that object. Use [Loom](https://www.loom.com) to record your session.
-   > Your public Loom URL here
+   > https://www.loom.com/share/448eae8e4a444e57a26b8d8dfce77a34?sid=e791f822-bbaf-4a02-b28e-3fa15542d9fa
 
 
 
